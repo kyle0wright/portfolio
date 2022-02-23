@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kyle Wright Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="/Users/kylewright/Portfolio/CSS/KWportfolioCss.css"/>
+  <style>
+    html {
+box-sizing: border-box;
+}
+*, *:before {
+box-sizing: inherit;
+}
+
+*:after {
+box-sizing: inherit;
+}
+
+body {
+color: #343434;
+margin: 0;
+padding: 0;
+font-family: 'Montserrat', sans-serif;
+font-size: 15px;
+line-height: 1.5;
+}
+
+.my-portfolio-image {
+    height: 400px;
+    width: 200px;
+    border-radius: 75%;
+}
+
+a {
+color: #FFE66D;
+}
+a:hover {
+text-decoration: none;
+}
+h1 {
+font-size: 75px;
+line-height: 1;
+}
+h2{
+font-size: 35px;
+}
+h1, h2 {
+font-family: 'Caveat', cursive;
+font-weight: 400;
+margin: 0;
+}
+.content-wrap {
+max-width: 800px;
+width: 85%;
+margin: 0 auto;
+padding: 60px 0 60px;
+}
+h3 {
+margin-bottom: 0;
+}
+.item-details h3 + p {
+font-style: italic;
+}
+.item-details h3 ~ p {
+margin: 0;
+}
+
+/* Profile
+-----------------------*/
+#about-me {
+display: flex;
+flex-direction: column;
+height: 100vh;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+
+
+#navbar {
+display: flex;
+justify-content: flex-end;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: #E3DE8F;
+box-shadow: 1px 4px 1px rgb(0 0 0 / 50%);
+z-index: 10;
+}
+#navbar ul {
+display: flex;
+font-size: 20px;
+flex-direction: row;
+justify-content: space-around;
+width: 55vw;
+list-style-type: none;
+}
+#navbar a {
+color: black;
+text-decoration: none;
+}
+#navbar a:hover {
+background-color: #495159;
+color: white;
+}
+
+header {
+background-color: #2F3061;
+color: #F7FFF7;
+
+}
+.divider > section {
+border-bottom: 1px dashed #343434;
+padding: 25px 0 25px;
+}
+.divider > section:last-of-type {
+border-bottom: none;
+}
+
+
+/* Projects
+-----------------------*/
+.projects {
+background: F7FFF7;
+}
+
+.projects a {
+color: #2F3061;
+}
+
+.projects .btn {
+color: #F7FFF7;
+background: #2F3061;
+text-decoration: none;
+padding: 8px;
+border-radius: 4px;
+display: inline-block;
+}
+.projects .btn:hover {
+background: rgba(47, 48, 97, 80%);
+}
+.project-tile {
+overflow: hidden;
+border-bottom: 1px dashed #343434;
+padding: 25px 0 25px;
+}
+.project-tile h3 {
+margin-top: 0;
+}
+
+/* Work Experience
+-----------------------*/
+.work-experience {
+background: #A1C6D7;
+}
+
+
+
+/* Education
+-----------------------*/
+.education {
+background-image: url();
+background-size: cover;
+background-position: top center;
+padding-bottom: 100px;
+color: black;
+}
+.education p {
+width: 60%;
+}
+
+
+/* Contact Info
+-----------------------*/
+footer {
+background: #343434;
+color: #F7FFF7;
+}
+.contact-list {
+list-style-type: none;
+padding: 0;
+
+}
+.contact-list a {
+padding: 15px;
+display: inline-block;
+}
+
+
+
+/* Responsive
+-----------------------*/
+@media screen and (min-width: 750px) {
+header, footer {
+text-align: center;
+}
+
+.project-item img {
+float: left;
+margin-right: 20px;
+}
+
+.job-item {
+display: grid;
+grid-template-columns: 1fr 2fr;
+column-gap: 20px;
+}
+.contact-list {
+display: flex;
+justify-content: center;
+
+}
+}
+
+@media screen and (max-width: 749px) {
+h1 {
+font-size: 75px;
+line-height: 0.9;
+margin-bottom: 20px;
+}
+h2 {
+line-height: 1;
+}
+.contact-list a {
+padding: 5px;
+}
+#navbar ul{
+display: flex;
+font-size: 20px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+}
+  </style>
+</head>
+<body>
+   <main>
+      <!-- ************* ABOUT / PROFILE ************* -->
+      <header id="welcome-section">
+        <nav id="navbar">
+      <ul>
+        <li> 
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li> 
+          <a class="nav-link" href="#work-experience">Work Experience</a>
+          </li>
+        <li> 
+            <a class="nav-link" href="#education">Education</a>
+            </li>
+      </ul>
+    </nav>
+          <div id="about-me">
+            <h1>Kyle A. Wright</h1>
+              <h2>Sales Development Associate</h2>
+                <p>Dynamic and driven FSU alum with a passion for legal affairs, public administration and sales management.</p>
+                <img class="my-portfolio-image" src="/Users/kylewright/Portfolio/images/portfolio_image.PNG" alt="Portfolio Photo" />
+                <p>Knowledgeable about public administration, various government sectors, sports, marketing, emergency management, sales, law and business management through coursework, leadership and work experience.</p>
+                <p>Other skills include: Web Design, HTML, CSS, JavaScript, Adobe Creative Suite, Microsoft Office, and various research databases.</p>
+          </div>
+      </header>
+      
+      <!--  ************* PROJECTS / PORTFOLIO ************ -->
+      <section id="projects" class="projects">
+        <div class="content-wrap divider">
+          <h2>Featured Projects</h2>
+          <p>View selected projects below. More information can be found on <a href="https://www.linkedin.com/in/kyleawright28/">LinkedIn</a>.</p>
+
+     <!-- Copy the whole <section> block to add more projects. -->
+          <section class="project-tile">
+             <img src="https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/83547731_10222163280729777_7785486886746718208_o.jpg?_nc_cat=107&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=3lctd9Bn7eYAX8izIO7&_nc_ht=scontent-ort2-1.xx&oh=c6d56555895359da1cffb39b0bf78eec&oe=606EF429" alt="picture of me">
+            <h3>Project Name</h3>
+            <p>Summary or description of the project and/or your role in it. Add as many paragraphs as you need</p>
+            <a class="btn" href="https://www.facebook.com/photo.php?fbid=10222163280649775&set=t.1295922943&type=3" target="_blank">View project / case study</a>
+          
+        </section>
+                                                                                               </div>
+      </section>
+        <!-- End of Project Block. -->
+        
+        
+        <!-- Work Experience -->
+        <section id="work-experience" class="work-experience">
+          <div class="content-wrap item-details divider">
+              <h2>Work Experience</h2>
+              <p>Dynamic and driven FSU alum with a passion for legal affairs, public administration and sales management. Knowledgeable about web design (HTML/CSS), public administration, various government sectors, sports, marketing, emergency management, sales, law and business management through coursework, leadership and work experience.</p>
+
+       <!-- Job 1 -->
+              <section class="job-item">
+               <div class="job-details">                       
+                <h3> Sales Development Associate</h3>
+                <p>LendingTree</p>
+                <p>November 2020 - Present</p>
+               </div>
+               <div class="job-summary">
+                <p>Description of Job Duties</p>
+               </div>
+            </section>
+       <!-- Job 2 -->
+              <section class="job-item">
+               <div class="job-details">
+                <h3> Claims Manager </h3>
+                <p>Lincoln Financial Group</p>
+                <p>February 2019 - October 2020</p>
+               </div>
+               <div class="job-summary">                        
+                <p>Description of Job Duties</p>
+               </div>
+             
+            </section>                            
+       <!-- Job 3 -->
+              <section class="job-item">
+               <div class="job-details">                        
+                <h3> Program Specialist </h3>
+                <p>Florida Department of Health</p>
+                <p>July 2016 - February 2019</p>
+               </div>
+               <div class="job-details">
+                <p>Description of Job Duties</p>
+               </div>                        
+              </div>                            
+                                   
+          </section>
+
+
+
+            <!-- *************** EDUCATION & CERTIFICATIONS **************** -->
+            <section id="education" class="education">
+              <div class="content-wrap item-details">
+                <h2>Education</h2>
+
+                <section>
+                  <h3>Florida State University - Tallahassee, FL</h3>
+                  <p>Bachelors of Science, 2015</p>
+                                       <ul>
+                                       <li>Social Entrepreneurship Internship, Fall 2015</li>
+                                       <li>President's List, Fall 2015</li>
+                                       <li>FEMA Certification IS-001200.a, IS-00100.b, IS00230.d</li>
+                                       </ul>
+              </div>
+            </section>
+            
+        </section>
+        
+        <footer>
+          <div class="content-wrap">
+            <h2>Let's Keep in Touch</h2>
+            <ul class="contact-list">
+            <li><a id="profile-link" class="LinkedIn" href="https://www.linkedin.com/in/kyleawright28/" target="_blank">LinkedIn</a></li>
+            <li><a class="Twitter" href="" target="_blank">Twitter</a></li>
+            <li><a class="Facebook" href="https://www.facebook.com/kyle.wright.714" target="_blank">Facebook</a></li>
+            </ul>
+            </div>
+        </footer>
+ 
+</body>
+</html>
